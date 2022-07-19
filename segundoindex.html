@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clase 2
+    </title>
+</head>
+<body>
+    <header>
+        <style>
+            h1 {
+                color: blue
+            }
+            h2 {
+                color: red
+            }
+        </style>
+        <h1>¿Como hacer un formulario?</h1>
+        <time datetime="16-7-2022"> Publicado 13-7-2022</time>
+        <nav>
+            <ul>
+                <li>
+                    <a href="a">Contactenos</a>
+                </li>
+                <li>
+                    <a href="d">Ayuda</a>
+                </li>
+                <li>Sobre nosotros</li>
+                <li>Contactenos</li>
+                <li>Ayuda</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <tab>
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <td>Estudiar</td>
+                    <td>Nucbaneta</td>
+                    <td>Trabajar</td>
+                    <td>Nadar</td>
+                    <td>Tomar cafe</td>
+                </tr>
+            </table>
+            <h1>Formulario</h1>
+            <!--Acá va un form con un action ; method ; target-->
+            <form>
+                <div>
+                  <h2> <label for="nombre">Nombre</label> </h2>
+                    <input type="text" id="nombre" required placeholder="Ingresa tu nombre" />
+                </div>
+                <div>
+                   <h2> <label for="apellido">Apellido</label> </h2>
+                    <input type="text" id="apellido" required placeholder="Ingresa tu apellido" />
+                </div>
+                <div>
+                   <h2> <label for="Correo">Correo Electronico</label> </h2>
+                    <input type="email" id="Correo" required placeholder="Ingresa tu correo" />
+                </div>
+                <div>
+                   <h2> <label for="password">Password</label> </h2>
+                    <input type="password" id="password" required placeholder="Ingresa tu contraseña" />
+                </div>
+                <div>
+                  <h2> <label for="dni">Numero de DNI</label> </h2>
+                    <input type="number" id="DNI" required placeholder="Ingrese su DNI" />
+                </div>
+
+                <div>
+                  <h2>  <label for="telefono">Telefono</label> </h2>
+                    <input type="tel" id="telefono" disabled />
+                </div>
+                <div>
+                    <p>A qué se dedica?</p>
+                    <input type="radio" name"" id="Empleado">
+                    <label for="Empleado">Empleado</label>
+
+                    <input type="radio" name"" id="Estudiante">
+                    <label for="Estudiante">Estudiante</label>
+
+                    <input type="radio" name"" id="Autonomo">
+                    <label for="Autonomo">Autonomo</label>
+
+                    <input type="radio" name"" id="Jubilado">
+                    <label for="Jubilado">Jubilado</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="terminos">
+                    <label for="terminos">¿Acepta terminos y condiciones?</label>
+                </div>
+
+                <div>
+                    <!--Al select tambien se lo llama 'dropdown'-->
+                    <select name="edad" id="edad">
+                        <option>Seleccione su rango de edad</option>
+                        <option value="1822">18 a 22 años</option>
+                        <option value="2330">23 a 30 años</option>
+                        <option value="3140">31 a 40 años</option>
+                        <option value="4150">41 a 50 años</option>
+                        <option value="mas60">60 o más</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                    <input type="date" id="fechaNacimiento">
+                </div>
+
+                <div>
+
+                    <div>
+                        <label for="color">Color</label>
+                        <input type="color" id="color">
+                    </div>
+                </div>
+
+                <div>
+                    <textarea name="description" id="description" required cols="30" rows="10"
+                        placeholder="Escriba una descripcion suya"></textarea>
+                </div>
+                <div>
+                    <!---Enviar formulario usando un input -->
+
+                    <!---Enviar el formulario usando un button-->
+                    <button>ENVIAR FORMULARIO</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Sobre nosotros</li>
+            <li>Contactenos</li>
+            <li>Ayuda</li>
+        </ul>
+    </footer>
+</body>
+</html>

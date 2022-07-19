@@ -1,0 +1,180 @@
+Resumen  18-7-2022
+
+Temas: git 101
+github
+mi primer repositorio
+
+
+Cuando ponemos un form tenemos que agregar un action que es hacia donde va la informacioón.
+lo que esté en POST es invisible al usuario.
+Get envia los datos utilizando URL.
+
+GET Y POST son dos maneras distintas de enviar información a un servidor.
+
+GIT Y GITHUB: 
+Git es una herramienta que nos permite controlar y organizar el código que escribimos.
+Se trabaja en equipo, y tiene que haber coordinación para modificar el archivo.
+Almacena tu proyecto en una nube, y podes modificar el código del pasado al presente.
+Comando de la consola que nos van a ayudar : pwd (print window directory)
+'ls'
+'cd'
+'pwd' nuevamente
+'ls'
+'cd nucba-2617'
+y nos mete adentro de la carpeta (directorio)
+
+git init nos crea un repositorio en la carpeta donde estemos posicionados
+Nos tira una linea especificando dónde estamos ubicados.
+git status nos da el estado de los archivos y las modificaciones (Si hubo alguno con..)
+(en VSCODE) podemos abrir una terminal con una consola dentro de VSCODE.
+
+git add y podemos escribir index.html por ejemplo
+en este comando tenemos que definir un mensaje: git comit -m "primer commit"
+Nos va a dar información con los archivos, líneas y modificaciones.
+
+git log nos da una list de los commit que hay.
+git config nos ayuda a conocer los comandos.
+
+git config --global user.email "mi email"
+
+git config --global user.name "mi nombre"
+
+Tenemos que usar el mismo mail que usamos en github (página)
+Una vez la cuenta creada nos creamos un repositorio donde dice new
+
+1 elegimos nombre de repositorio
+2 por ahora dejamos repositorios públicos para que compañeros puedan ver
+3 Le damos a crear repositorio
+
+tenemos que correr si o si
+-init
+-add
+-commit 
+
+branch (rama) espacio de trabajo donde vamos a tener nuestro código.
+Por default se llama -m master
+podemos cambiar nombre poniendo -m main (ej)
+
+git remote add origin git@blabla.com:agusg/primerrepo.git
+es como una url de donde va a estar ese repositorio.
+
+mandar nuestro código local a un repositorio
+git push -u origin main (nuestra rama se va a llamar main)
+el '-u' es para no especificar la rama
+
+Damos enter y nos da información detallada del archivo.
+Vamos a la pagina de github , actualizamos y nos muestra el cambio en nuestro repositorio. Ej index.html
+Github tiene repositorios ilimitados, publicos o privados.
+
+ej: modificamos el titulo del archivo, lo guardamos.
+Cuando metemos un cambio en el código, lo primero que hacemos en la consola es:
+darle a git status (qué cambios hay en nuestro repositorio de manera local)
+corremos comando git add (nombre de archivo) damos enter 
+y se agregan los archivos.
+volvemos a correr git status y nos dice que los cambios estan ok. (commited)
+limpiamos la consola con clear.
+
+creamos un commit con git commit -m "cambio de titulo y tabla"
+damos enter y nos tira un mensaje.
+
+con git log nos va a alistar los commits en el repositorio.
+VAMOS A GITHUB, vamos al index.html y todo está igual. A pesar de que tocamos el código.
+
+Para enviar los cambios a la nube utilizamos git push
+*limpia consola*
+git push origin main (da enter)
+
+Ahora si refrescamos en github figuran los cambios.
+Nos vamos a dar cuenta que está bien porque si abrimos el arvhico en vscode y en github el código está igual.
+Es decir, se guardó correctamente.
+
+repaso: git status (para ver qué archivos fueron cambiados)
+clear
+
+si tenemos archivo a cambiar: git add . (el punto . va) agrega todos los archivos cambiados
+creamos con git commit -m "algun mensaje" esto crea una versión de nuestro código (paquete de cambios)
+con todos los archivos que agregamos
+
+para mandarlo a la nube tenemos que pushearlo :
+git push origin main
+
+Cuando vamos a dar push tenemos que poner usuario y contraseña de github
+
+entonces en orden:
+git status
+git add .  
+git commit -m "mensaje" tiene que representar la modificación
+git push origin main
+ó
+git push origin master
+
+Si tira error por la rama local, la renombramos:
+git branch -m main
+
+git clone agarra un proyecto de github y lo descarga a nuestra pc de manera local.
+
+Git push es para subirlos a github
+commit es para que ya queden listos para subir
+
+para editar: en la pestaña de Code podemos clonar (usamos HTTPS)
+copiamos y vamos a otra carpeta donde querramos ver el codigo.
+abrimos la consola  (click derecho y usar gitbash aquí)
+simbolo de windows y cmd y abre la consola
+
+tiramos pwd (para ver en qué carpeta estamos actualmente)
+vamos a Desktop (ej) y ya está en el escritorio
+
+el comando ls enlista los archivos del escritorio.
+
+El corre git clone y pega el link https.
+corre ls de vuelta 
+cd primer-repo-nucba
+y ahora estamos dentro de la repo
+
+como configurar una terminal
+ctrl shft p escribimos terminal 
+settings
+y podemos elegir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
